@@ -1,0 +1,139 @@
+body {
+    font-family: Arial, sans-serif; /* pra definir a fonte padrao*/
+    background-color: #121212; /* pra deixar a cor do fundo escura */
+    color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    padding-top: 60px;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    box-sizing: border-box; /* padding e bordas no tamanho total dos elementos */
+}
+
+/* estilo parte de cima */
+.navbar {
+    display: flex;
+    align-items: center;
+    color: #FFFFFF; 
+    
+    position: fixed; 
+    top: 0;
+}
+
+.nav-logo {
+    height: 100px; 
+    width: 100px;
+}
+
+
+/* conteudo principal que tem as playlists*/
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    max-width: 1200px;
+    flex-wrap: wrap; /* permite que os itens se quebrem em múltiplas linhas se necessário */ 
+    gap: 20px;
+}
+
+/* sessao de criação e exibição da playlist*/
+.create-playlist, .playlist-display {
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    background-color: #1DB954;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+/* sessão de playlist*/
+.create-playlist {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+}
+
+h2 {
+    text-align: center;
+}
+
+/* estiliza o campo de texto */
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+    outline: none; /* remove a borda de foco padrão */
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #1ED760;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1DB954;
+
+}
+
+.playlist-display {
+    max-height: 400px; 
+    overflow-y: auto; /* adiciona rolagem quando as musicas ultrapassarem o tamanho da caixa*/
+    position: relative; 
+}
+
+
+ul {
+    list-style-type: none; /* remove as bolinhas da lista */
+    padding: 20px 0 0 0;
+    margin: 0;
+}
+
+/* estilizar a lista*/
+
+ul li {
+    padding: 10px 0;
+    border-bottom: 1px solid #FFFFFF;
+}
+
+/* estilo para o rodapé */
+.footer {
+    width: 100%;
+    background-color: #121212; 
+    color: #FFFFFF;
+    text-align: center; 
+    position: fixed; 
+    bottom: 0;
+
+  
+}
+
+/* responsividade */
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .create-playlist, .playlist-display {
+        width: 90%;
+    }
+
+    .nav-logo, .navbar, .footer {
+        display: none;
+    }
+}

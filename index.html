@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criador de playlist</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="pics/icon.png" type="image/x-icon">
+</head>
+<body>
+        <nav class="navbar">
+            <img src="pics/bottomless.png" alt="fone de ouvido verde com um icone de musica" class="nav-logo">
+            <h1>Criação de Playlist</h1>
+        </nav>
+
+            <div class="container">
+                <!-- tela de criação de playlist -->
+                <div class="create-playlist">
+                    <h2>Criar playlist</h2>
+                    <!--pra criar o formulário e o placeholder pra ficar o texto no fundo-->
+                    <input type="text" id="playlistName" placeholder="Nome da playlist"> 
+                    <input type="text" id="musicName" placeholder="Nome da música">
+                    <input type="text" id="artistName" placeholder="Nome do cantor">
+                    <button id="addMusic">Adicionar música</button>
+
+                </div>
+                
+                <!-- tela de visualização da playlist (nome da playlist, música e cantor) -->
+                <div class="playlist-display">
+                    <h2 id="displayPlaylistName">Nome da playlist</h2>
+                    <ul id="musicList"></ul>
+                </div>
+            </div>
+
+            <footer class="footer">
+                <p>&copy; 2024 Criador de playlist. Todos os direitos reservados.</p>
+            </footer>    
+
+    <script src="app.js"></script>
+</body>
+</html>
