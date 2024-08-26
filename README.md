@@ -9,10 +9,10 @@ Abra o Visual Studio Code:
 Se ainda não tiver o Visual Studio Code instalado, baixe e instale-o a partir do site oficial.  
 
 Crie uma nova pasta para o projeto:  
-Copie o código HTML e crie um novo arquivo chamado index.html  
-Copie o código CSS e crie um novo arquivo chamado style.css  
-Copie o código TypeScript e crie um novo arquivo chamado app.ts  
-Copie o código JavaScript e crie um novo arquivo chamado app.js  
+Copie o código HTML, crie um novo arquivo chamado index.html e cole o código   
+Copie o código CSS, crie um novo arquivo chamado style.css e cole o código   
+Copie o código TypeScript, crie um novo arquivo chamado app.ts e cole o código   
+Copie o código JavaScript, crie um novo arquivo chamado app.js e cole o código   
   
 Visualize a aplicação no navegador:  
 
